@@ -19,7 +19,6 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object Module {
 
-    //    Base_Url:- https://itunes.apple.com/search?term=baby
     @Provides
     fun provideApiService(): APIClient {
         val builder = Retrofit.Builder()
